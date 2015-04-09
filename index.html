@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FixTeR</title>
+
+<!--Bootstrap-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--JQuery Mobile-->
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"> -->
+
+</head>
+
+
+<style type="text/css">
+
+body {
+    /*Centramos todo*/
+    text-align: center;
+  /* Location of the image */
+  background-image: url(img/back.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+@font-face {
+font-family: FixTeR;
+src: url(fonts/FixTeR.ttf);
+}
+@font-face {
+font-family: FixTeR_Bold;
+src: url(fonts/FixTeR_Bold.ttf);
+}
+/*@font-face {
+font-family: glyphicons-halflings-regular;
+src: url(glyphicons-halflings-regular.ttf);
+}*/
+
+h3{
+
+    color:  white;
+    font-family: 'FixTeR', sans-serif;
+}
+h5{
+    font-family: 'FixTeR', sans-serif;
+}
+p{
+    font-family: 'FixTeR_Bold', sans-serif;
+    font-size: 100%;
+    color: white;
+}
+.cajita_frente{
+    position: relative; 
+    z-index: 10;
+/*    width:100%;*/
+    min-height:100px;
+}
+.cajita_atraz{
+    background-color: white;
+    position:absolute; 
+    z-index:-1;
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    opacity:0.2;
+}
+
+.center-in-span { 
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: auto;
+    max-height: 200px;
+    min-height:100px;
+ }
+ .fixed{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    z-index:15;
+ }
+a{
+    color: black;
+}
+.hide{
+    display: none;
+}
+
+
+</style>
+
+<body>
+
+<div id="inicio">
+
+<div id="Principal" class="container">
+<br>
+<br>
+<br>
+
+
+
+
+
+
+</div><!--Termina Container-->
+
+
+<!--FOOTER-->
+<footer class="fixed panel-footer">
+
+<a href="http://fixter.org" ><h5>FixTeR -- Héctor F. Campos M.</h5></a>
+
+</footer>
+
+</div><!--Fin pagina 1-->
+
+
+
+
+
+
+
+
+
+<!--Aqui termina el DOM-->
+
+
+
+<!--JQUERY-->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--Bootstrap-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--JQuery Mobile-->
+<!-- <script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script> -->
+<!--Cordova-->
+<script type="text/javascript" src="js/index.js"></script>
+<!-- <script type="text/javascript" src="cordova.js"></script> -->
+<script type="text/javascript">
+app.initialize();
+</script>
+
+
+
+
+</body>
+</html>
